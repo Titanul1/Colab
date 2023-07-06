@@ -5,6 +5,11 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.svm import LinearSVC
 import subprocess
 
+subprocess.run(["pip", "install", "scikit-learn"])
+
+# Import the required module
+from sklearn.model_selection import train_test_split
+
 # Install packages using pip
 subprocess.run(["pip", "install", "huggingface"])
 subprocess.run(["pip", "install", "huggingface_hub"])
