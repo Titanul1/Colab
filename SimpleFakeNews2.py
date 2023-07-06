@@ -1,11 +1,12 @@
 import numpy as np
+import subprocess
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.svm import LinearSVC
-import subprocess
 from datasets import load_dataset
 
 # Install required packages
+subprocess.run(["pip", "install", "scikit-learn"])
 subprocess.run(["pip", "install", "huggingface"])
 subprocess.run(["pip", "install", "huggingface_hub"])
 subprocess.run(["pip", "install", "transformers"])
