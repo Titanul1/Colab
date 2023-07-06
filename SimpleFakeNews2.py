@@ -23,7 +23,7 @@
             "_model_module": "@jupyter-widgets/controls",
             "_model_module_version": "1.5.0",
             "_model_name": "HBoxModel",
-            "_view_count": ,
+            "_view_count",
             "_view_module": "@jupyter-widgets/controls",
             "_view_module_version": "1.5.0",
             "_view_name": "HBoxView",
