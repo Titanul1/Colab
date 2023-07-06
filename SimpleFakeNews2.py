@@ -17,7 +17,7 @@
     {
       "cell_type": "code",
       "execution_count":
-      "metadata": {
+      "metadata" {
         "id": "zNUR-hw4MHo1"
       },
       "outputs": [],
