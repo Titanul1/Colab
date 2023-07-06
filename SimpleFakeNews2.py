@@ -3,15 +3,16 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.svm import LinearSVC
+import subprocess
+
+# Install packages using pip
+subprocess.run(["pip", "install", "huggingface"])
+subprocess.run(["pip", "install", "huggingface_hub"])
+subprocess.run(["pip", "install", "transformers"])
+subprocess.run(["pip", "install", "datasets"])
 
 # BIP Project 6 - Karell, Antonio, Hanna
 # adapted from from https://www.youtube.com/watch?v=ZE2DANLfBIs&ab_channel=NeuralNine
-
-# Install required packages
-!pip install huggingface
-!pip install huggingface_hub
-!pip install transformers
-!pip install datasets
 # Load dataset
 from datasets import load_dataset
 data = load_dataset("liar")
