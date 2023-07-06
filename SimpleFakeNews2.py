@@ -51,3 +51,17 @@ text = "Some new text to predict"
 vectorized_text = vectorizer.transform([text])
 prediction = classifier.predict(vectorized_text)
 print("Prediction:", prediction)
+
+
+# Shuffle the indices of your data
+indices = np.random.permutation(len(X))
+
+# Define the ratio for the train-test split
+train_ratio = 0.8  # 80% for training, 20% for testing
+
+# Compute the split index
+split_index = int(len(X) * train_ratio)
+
+# Split the data and labels into training and testing sets
+X_train, X_test = X[indices[:split_index]], X[indices[split_index:]]
+y_train, y_test = y[indices[:split_index]], y[indices[split_index:]]
