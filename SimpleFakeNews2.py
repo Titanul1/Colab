@@ -8,7 +8,7 @@ from sklearn.svm import LinearSVC
 # adapted from from https://www.youtube.com/watch?v=ZE2DANLfBIs&ab_channel=NeuralNine
 
 # Install required packages
-pip install git+https://github.com/huggingface/transformers
+conda install -c huggingface transformers
 # Load dataset
 from datasets import load_dataset
 data = load_dataset("liar")
