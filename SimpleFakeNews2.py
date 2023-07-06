@@ -17,9 +17,9 @@
     {
       "cell_type": "code",
       "execution_count":
-      "metadata" 
+      "metadata" {
         "id" "zNUR-hw4MHo1"
-      
+    }
       "outputs"
       "source" [
         "# BIP Project 6 - Karell, Antonio, Hanna\n",
