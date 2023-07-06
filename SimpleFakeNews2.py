@@ -56,3 +56,4 @@ text = "Some new text to predict"
 vectorized_text = vectorizer.transform([text])
 prediction = classifier.predict(vectorized_text)
 print("Prediction:", prediction)
+
