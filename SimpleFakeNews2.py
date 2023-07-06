@@ -20,7 +20,7 @@
       "metadata" 
         "id" "zNUR-hw4MHo1"
       
-      "outputs" [],
+      "outputs"
       "source": [
         "# BIP Project 6 - Karell, Antonio, Hanna\n",
         "# adapted from from https://www.youtube.com/watch?v=ZE2DANLfBIs&ab_channel=NeuralNine\n",
