@@ -15,11 +15,11 @@ st.title('FakeNews')
 
 
 
-    ceva = st.text_input('Type in the URL of the webpage:','https://en.wikipedia.org/wiki/Wiki',key=1)
-    st.write(ceva)
 
  st.button('Ceva aici'):
 
+ceva = st.text_input('Type in the URL of the webpage:','https://en.wikipedia.org/wiki/Wiki',key=1)
+st.write(ceva)
 
 
 # Define constants
