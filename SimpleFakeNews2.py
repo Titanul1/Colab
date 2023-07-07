@@ -148,24 +148,7 @@ def main():
         print("This seems to be a mostly reliable site.")
 
     # Get text from a user-specified URL
-    print("Type in the URL of the webpage:")
-    url = input()
-    try:
-        response = requests.get(url)
-        soup = BeautifulSoup(response.text, 'html.parser')
-        text = soup.get_text(separator=' ')
-        vectorized_text = vectorizer.transform([text])
-        pred = classifier.predict(vectorized_text)
-        print(pred)
-    except Exception as e:
-        print("Error occurred while processing the URL:", str(e))
 
-    # Get text from user input
-    print("Type text to be analyzed:")
-    text = input()
-    vectorized_text = vectorizer.transform([text])
-    pred = classifier.predict(vectorized_text)
-    print(pred)
 
     # Scrape articles from The Guardian and download the CSV file
     scrape_articles(GUARDIAN_URL)
