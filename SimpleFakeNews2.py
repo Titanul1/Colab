@@ -13,7 +13,7 @@ from bs4 import BeautifulSoup
 
 st.title('FakeNews')
 
-if st.button('Say hello'):
+if st.buttonon_click(''):
      st.write('Why hello there')
 else:
      st.write('Goodbye')
