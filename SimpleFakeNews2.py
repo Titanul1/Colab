@@ -13,11 +13,13 @@ from bs4 import BeautifulSoup
 
 st.title('FakeNews')
 
-
 if st.button('Say hello'):
      st.write('Why hello there')
 else:
      st.write('Goodbye')
+
+
+
 # Define constants
 FAKE_REAL_NEWS_CSV_URL = 'https://drive.google.com/uc?id=14HFSVmD84uQai5IXDGBGHHvJ9SbEdPsA'
 UNIDENTIFIED_TEXT_URL = 'https://drive.google.com/uc?id=18bU9lBfh_hrQHUfwzQwkjOVyN3VIQIPs'
