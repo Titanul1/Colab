@@ -8,7 +8,7 @@ import requests
 import csv
 import streamlit as st
 import logging
-import mymodel as m
+import SimpleFakeNews2 as m
 from bs4 import BeautifulSoup
 
 st.write("""
