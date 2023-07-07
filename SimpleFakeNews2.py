@@ -11,6 +11,8 @@ import logging
 import SimpleFakeNews2 as m
 from bs4 import BeautifulSoup
 
+streamlit run SimpleFakeNews2.py
+
 st.write("""
 #Ceva pe acolo Boss
 Hopa *CF GEIGELE?*""")
