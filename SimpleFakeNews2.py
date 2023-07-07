@@ -172,7 +172,7 @@ def main():
     print("Type text to be analyzed:")
     ceva2 = st.text_area('Type in the URL of the webpage:','https://en.wikipedia.org/wiki/Wiki')
     st.write(ceva2)
-    text = ceva
+    text = ceva2
     vectorized_text = vectorizer.transform([text])
     pred = classifier.predict(vectorized_text)
     print(pred)
