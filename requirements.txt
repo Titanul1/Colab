@@ -1,2 +1,2 @@
 scikit-learn
-pip install gdown
+import gdown
