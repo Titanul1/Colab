@@ -17,7 +17,9 @@ st.title('FakeNews')
 ceva = st.text_input('Type in the URL of the webpage:','',key=1)
 st.write(ceva)
 if ceva ==""
-st.button('Ceva aici')
+    st.write('Type ba a URL')
+else
+    st.button('Ceva aici')
 
 
 
