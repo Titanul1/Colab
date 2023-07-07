@@ -13,7 +13,8 @@ from bs4 import BeautifulSoup
 
 st.title('FakeNews')
 
-st.text_input('Type in the URL of the webpage:', '')
+st.text_input('Type in the URL of the webpage:', text = '')
+
 
 # Define constants
 FAKE_REAL_NEWS_CSV_URL = 'https://drive.google.com/uc?id=14HFSVmD84uQai5IXDGBGHHvJ9SbEdPsA'
@@ -155,7 +156,7 @@ def main():
 
     # Get text from a user-specified URL
     print("Type in the URL of the webpage:")
-    url = input()
+    url = text
     try:
         response = requests.get(url)
         soup = BeautifulSoup(response.text, 'html.parser')
