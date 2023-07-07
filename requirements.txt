@@ -1,4 +1,4 @@
 scikit-learn
 gdown
 streamlit
-streamlit run SimpleFakeNews2.py
+streamlit run
