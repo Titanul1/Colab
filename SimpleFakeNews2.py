@@ -6,16 +6,14 @@ from sklearn.svm import LinearSVC
 import gdown
 import requests
 import csv
+import seaborn as sns
 import streamlit as st
 import logging
 from bs4 import BeautifulSoup
 
 
-st.write("""
-##Ceva pe acolo Boss
+st.write("""Ceva pe acolo Boss
 Hopa *CF GEIGELE?*""")
-
-
 # Define constants
 FAKE_REAL_NEWS_CSV_URL = 'https://drive.google.com/uc?id=14HFSVmD84uQai5IXDGBGHHvJ9SbEdPsA'
 UNIDENTIFIED_TEXT_URL = 'https://drive.google.com/uc?id=18bU9lBfh_hrQHUfwzQwkjOVyN3VIQIPs'
@@ -155,7 +153,24 @@ def main():
         print("This seems to be a mostly reliable site.")
 
     # Get text from a user-specified URL
+    print("Type in the URL of the webpage:")
+    url = input()
+    try:
+        response = requests.get(url)
+        soup = BeautifulSoup(response.text, 'html.parser')
+        text = soup.get_text(separator=' ')
+        vectorized_text = vectorizer.transform([text])
+        pred = classifier.predict(vectorized_text)
+        print(pred)
+    except Exception as e:
+        print("Error occurred while processing the URL:", str(e))
 
+    # Get text from user input
+    print("Type text to be analyzed:")
+    text = input()
+    vectorized_text = vectorizer.transform([text])
+    pred = classifier.predict(vectorized_text)
+    print(pred)
 
     # Scrape articles from The Guardian and download the CSV file
     scrape_articles(GUARDIAN_URL)
