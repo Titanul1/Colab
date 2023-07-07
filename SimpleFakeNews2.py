@@ -6,8 +6,13 @@ from sklearn.svm import LinearSVC
 import gdown
 import requests
 import csv
+import streamlit as st
 import logging
 from bs4 import BeautifulSoup
+
+st.write("""
+#Ceva pe acolo Boss
+Hopa *CF GEIGELE?*""")
 
 # Define constants
 FAKE_REAL_NEWS_CSV_URL = 'https://drive.google.com/uc?id=14HFSVmD84uQai5IXDGBGHHvJ9SbEdPsA'
