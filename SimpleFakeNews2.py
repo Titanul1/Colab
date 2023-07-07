@@ -12,9 +12,9 @@ import logging
 from bs4 import BeautifulSoup
 
 st.title('FakeNews')
+st.text_input('Type in the URL of the webpage:','')
 
-
-ceva = st.text_area(st.text_input('Type in the URL of the webpage:',''))
+ceva = st.text_area('','')
 
 
 # Define constants
