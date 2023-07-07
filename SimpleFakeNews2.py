@@ -13,7 +13,7 @@ from bs4 import BeautifulSoup
 
 st.title('FakeNews')
 
- text = st.text_input('Type in the URL of the webpage:','')
+st.text_input('Type in the URL of the webpage:','')
 
 st.write(text)
 
