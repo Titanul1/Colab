@@ -12,7 +12,7 @@ from bs4 import BeautifulSoup
 
 
 st.write("""
-#Ceva pe acolo Boss
+##Ceva pe acolo Boss
 Hopa *CF GEIGELE?*""")
 
 
