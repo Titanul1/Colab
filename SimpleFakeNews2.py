@@ -13,7 +13,7 @@ from bs4 import BeautifulSoup
 
 st.title('FakeNews')
 
-st.text_input(label, value="", max_chars=None, key=None, type="default", help=None, autocomplete=None, on_change=None, args=None, kwargs=None, *, placeholder=None, disabled=False, label_visibility="visible")
+st.text_input()
 
 # Define constants
 FAKE_REAL_NEWS_CSV_URL = 'https://drive.google.com/uc?id=14HFSVmD84uQai5IXDGBGHHvJ9SbEdPsA'
