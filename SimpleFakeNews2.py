@@ -15,7 +15,7 @@ st.title('FakeNews')
 
 st.text_input('Type in the URL of the webpage:','')
 
-st.write(text)
+
 
 # Define constants
 FAKE_REAL_NEWS_CSV_URL = 'https://drive.google.com/uc?id=14HFSVmD84uQai5IXDGBGHHvJ9SbEdPsA'
