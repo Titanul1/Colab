@@ -8,10 +8,8 @@ import requests
 import csv
 import streamlit as st
 import logging
-import SimpleFakeNews2 as m
 from bs4 import BeautifulSoup
 
-streamlit run SimpleFakeNews2.py
 
 st.write("""
 #Ceva pe acolo Boss
