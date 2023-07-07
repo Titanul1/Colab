@@ -13,10 +13,12 @@ from bs4 import BeautifulSoup
 
 st.title('FakeNews')
 
-if st.button(''):
-     st.write('Why hello there')
-else:
-     st.write('Goodbye')
+
+
+    ceva = st.text_input('Type in the URL of the webpage:','https://en.wikipedia.org/wiki/Wiki',key=1)
+    st.write(ceva)
+
+ st.button('Ceva aici'):
 
 
 
@@ -160,8 +162,6 @@ def main():
 
     # Get text from a user-specified URL
     print("Type in the URL of the webpage:")
-    ceva = st.text_input('Type in the URL of the webpage:','https://en.wikipedia.org/wiki/Wiki',key=1)
-    st.write(ceva)
     url = ceva
     try:
         response = requests.get(url)
