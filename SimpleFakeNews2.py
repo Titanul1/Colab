@@ -155,7 +155,7 @@ def main():
 
     # Get text from a user-specified URL
     print("Type in the URL of the webpage:")
-    ceva = st.text_area('Type in the URL of the webpage:','https://en.wikipedia.org/wiki/Wiki')
+    ceva = st.text_area('Type in the URL of the webpage:','https://en.wikipedia.org/wiki/Wiki',key=1)
     st.write(ceva)
     url = ceva
     try:
@@ -170,7 +170,7 @@ def main():
 
     # Get text from user input
     print("Type text to be analyzed:")
-    ceva2 = st.text_area('Type in the URL of the webpage:','https://en.wikipedia.org/wiki/Wiki')
+    ceva2 = st.text_area('Type in the URL of the webpage:','https://en.wikipedia.org/wiki/Wiki',key=2)
     st.write(ceva2)
     text = ceva2
     vectorized_text = vectorizer.transform([text])
