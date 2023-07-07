@@ -15,7 +15,6 @@ st.write("""
 #Ceva pe acolo Boss
 Hopa *CF GEIGELE?*""")
 
-st.write(m.run(window=10))
 
 # Define constants
 FAKE_REAL_NEWS_CSV_URL = 'https://drive.google.com/uc?id=14HFSVmD84uQai5IXDGBGHHvJ9SbEdPsA'
